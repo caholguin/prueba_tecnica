@@ -144,7 +144,7 @@ La aplicación estará disponible en http://localhost:8080. Puedes utilizar herr
    }
   ``` 
   
-- ### Eliminar Producto
+### Eliminar Producto
 
 - **Endpoint:** `DELETE /api/v1/products/1`
 - **URL Completa:** [http://localhost:8080/api/v1/products/1](http://localhost:8080/api/v1/products/1)
