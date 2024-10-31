@@ -12,14 +12,14 @@ Antes de comenzar, asegúrate de tener instalados los siguientes programas:
 
 ## Pasos para Desplegar la Aplicación
 
-1. **Clona el repositorio** (si aún no lo has hecho):
+### 1. **Clona el repositorio** (si aún no lo has hecho):
 
    ```bash
    git clone <URL_DEL_REPOSITORIO>
    cd <NOMBRE_DEL_DIRECTORIO_DEL_PROYECTO>
+  ```
 
-
-2. **Compila el proyecto:**
+### 2. **Compila el proyecto:**
 
 Asegúrate de estar en la raíz del proyecto y ejecuta el siguiente comando para construir el archivo JAR de la aplicación:
 
@@ -27,7 +27,7 @@ Asegúrate de estar en la raíz del proyecto y ejecuta el siguiente comando para
 .\mvnw.cmd clean package -DskipTests
 ```
 
-3. **Despliega la aplicación:**
+### 3. **Despliega la aplicación:**
 
 Una vez que el proyecto esté compilado, ejecuta el siguiente comando para construir y ejecutar los contenedores de Docker:
 
@@ -35,14 +35,11 @@ Una vez que el proyecto esté compilado, ejecuta el siguiente comando para const
 docker-compose up --build
 ```
 
-4. **Accede a la Aplicación:**
+### 4. **Accede a la Aplicación:**
 
 La aplicación estará disponible en http://localhost:8080. Puedes utilizar herramientas como Postman o tu navegador para interactuar con la aplicación.
 
-5. **Tambien Puedes probar la api con swagger en el siguiente link:** http://localhost:8080/api/v1/swagger-ui/index.html
-
-
-O tambien en postman a continuación comparto los endpoints 
+### 5. **Tambien Puedes probar la api con swagger en el siguiente link:** http://localhost:8080/api/v1/swagger-ui/index.html o tambien en postman a continuación comparto los endpoints 
 
 ### Crear una Franquicia
 
