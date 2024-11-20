@@ -74,7 +74,13 @@ public class FibonacciServiceImpl implements FibonacciService {
         fibonacciDb.setFibonacci(sb.toString());
         fibonacciRespository.save(fibonacciDb);
 
-        sendEmail("caholguin1798@gmail.com", "prueba ",sb.toString());
+
+        List<String> recipients = new ArrayList<>();
+        recipients.add("didier.correa@proteccion.com.co");
+        recipients.add("correalondon@gmail.com");
+        recipients.add("caholguin179@gmail.com");
+
+        sendEmail(recipients, "prueba ",sb.toString());
 
         return fibonacci;
     }
@@ -96,10 +102,10 @@ public class FibonacciServiceImpl implements FibonacciService {
     }
 
 
-    public void sendEmail(String to, String subject, String body) {
+    public void sendEmail(List<String> toList, String subject, String body) {
         SimpleMailMessage message = new SimpleMailMessage();
         message.setFrom("caholguin179@gmail.com");
-        message.setTo(to);
+        message.setTo(toList.toArray(new String[0]));
         message.setSubject(subject);
         message.setText(body);
         mailSender.send(message);
